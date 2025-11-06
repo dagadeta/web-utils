@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Padlet Auto Refresh + Header Remove",
+  "version": "1.0",
+  "description": "Removes the Padlet header and refreshes the page regularly.",
+  "content_scripts": [
+    {
+      "matches": ["https://padlet.com/*", "https://*.padlet.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": []
+}
