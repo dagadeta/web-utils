@@ -10,7 +10,5 @@ function removeHeader() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    delayedRefresh();
-    removeHeader();
-});
+delayedRefresh();
+removeHeader();
